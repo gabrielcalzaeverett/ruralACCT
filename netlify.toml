@@ -7,3 +7,6 @@
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
   HUGO_BASEURL = "/"
+
+[[plugins]]
+  package = "netlify-plugin-password-protection"
