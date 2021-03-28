@@ -1,16 +1,17 @@
 ############################# About ###################################
 about:
   enable : true
-  title : About Us
+  title : About the Strengthening Rural Community Colleges Initiative
+  content: hahah
   about_item :
-  - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-    title : We're Creative
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-search # themify icon pack : https://themify.me/themify-icons
+    title : Research
+    content : the needs facing rural communities and their institutions                                                                   
 
-  - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-    title : We're Professional
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-comments # themify icon pack : https://themify.me/themify-icons
+    title : Convene
+    content : trustees, presidents, and community stakeholders in each state                                                             
 
-  - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
-    title : We're Genius
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-target # themify icon pack : https://themify.me/themify-icons
+    title : Advocate
+    content : for rural institutions and recommend policies that support the long-term success of students, institutions, and communities.
