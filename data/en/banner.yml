@@ -1,12 +1,12 @@
 ############################### Banner ################################
 banner:
   enable : true
-  bg_image_webp : "images/backgrounds/hero-area.webp"
-  bg_image : "images/backgrounds/hero-area.jpg"
+  #bg_image_webp : "images/backgrounds/hero-area.webp"
+  bg_image : "images/asset/pano-rural.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Experience the new reality"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+  title : "The Rural Community College Landscape"
+  content : "According to the U.S. Department of Education, there are over 260 rural community colleges in the United States which educate nearly 670,000 students a year. Rural community colleges provide a number of vital functions. In addition to offering educational opportunities and vocational training, many represent the largest employer in their communities. In order to best serve these colleges and their students, it is critical that we understand their successes and their challenges, and develop policy solutions to support rural institutions and their communities in achieving academic and economic prosperity."
   button:
     enable : true
-    label : "Explore Us"
-    link : "#services"
+    label : "Learn more"
+    link : "#about"
