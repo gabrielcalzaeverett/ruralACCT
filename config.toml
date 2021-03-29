@@ -211,3 +211,7 @@ copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher
 # weight = 2
 # home = "Accueil"
 # copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+
+##### Allow using raw HTML #https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032 #so I can use <a href="" target="_blank"></a> in md files
+[markup.goldmark.renderer]
+unsafe= true
