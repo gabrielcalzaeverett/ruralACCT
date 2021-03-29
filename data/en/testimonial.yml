@@ -1,7 +1,7 @@
 ################################# Testimonial #########################
 testimonial:
   enable : true
-  bg_image : images/asset/report-cover.png
+  bg_image : images/asset/report-pic.jpg
   #bg_image_webp : images/backgrounds/bg-testimonial.webp
   testimonial_item :
     # testimonial item loop

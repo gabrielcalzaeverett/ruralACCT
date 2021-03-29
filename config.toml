@@ -48,15 +48,15 @@ url = "about"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "services"
+name = "publication"
 pre = "#"
-url = "services"
+url = "testimonial"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "portfolio"
+name = "blog"
 pre = "#"
-url = "portfolio"
+url = "blog"
 weight = 3
 
 [[Languages.en.menu.main]]
@@ -66,28 +66,16 @@ url = "team"
 weight = 4
 
 [[Languages.en.menu.main]]
-name = "pricing"
+name = "ACCT"
 pre = "#"
-url = "pricing"
+url = "feature"
 weight = 5
 
-[[Languages.en.menu.main]]
-name = "blog"
-pre = "#"
-url = "blog"
-weight = 6
-
-[[Languages.en.menu.main]]
-name = "contact"
-pre = "#"
-url = "contact"
-weight = 7
-
-[[Languages.en.menu.main]]
-name = "themefisher"
-pre = ""
-url = "https://themefisher.com/"
-weight = 8
+# [[Languages.en.menu.main]]
+# name = "themefisher"
+# pre = ""
+# url = "https://themefisher.com/"
+# weight = 8
 
 
 # ################### French Navigation ########################
@@ -141,7 +129,7 @@ weight = 8
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/logo.png"
+logo = "images/acct-logo-blue.png"
 # Meta data
 description = "Responsive Multipurpose Parallax Hugo Template"
 author = "Themefisher"
@@ -164,8 +152,8 @@ expire_days = 2
 [params.map]
 enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "38.904013"
+map_longitude = "-77.038063"
 map_marker = "images/marker.png"
 
 ############################# social icons ##########################

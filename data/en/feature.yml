@@ -1,7 +1,7 @@
 ############################# feature ###################################
 feature:
   enable : true
-  image : images/about/about-business-man.jpg
+  image : images/asset/about-business-man.jpg
   image_webp : images/about/about-business-man.webp
   title : About ACCT
   content1 : "The Association of Community College Trustees (ACCT) is a non-profit educational organization of governing boards, representing more than 6,500 elected and appointed trustees who govern over 1,200 community, technical, and junior colleges in the United States and beyond."
@@ -16,6 +16,6 @@ feature:
     #   # feature item loop
     # - title : Easy Customization
     #   icon : ti-panel # themify icon pack : https://themify.me/themify-icons
-    #   content : 
+    #   content :
 
       

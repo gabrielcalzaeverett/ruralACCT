@@ -445,7 +445,7 @@ a:hover {
 
 .hero-area:before {
   content: '';
-  background: rgba(0, 0, 0, 0.63);
+  background: rgba(134, 134, 134, 0.63);
   position: absolute;
   top: 0;
   right: 0;
@@ -1118,7 +1118,7 @@ a:hover {
 }
 
 .testimonial:before {
-  background: rgba(42, 48, 55, 0.7);
+  background: rgba(77, 77, 77, 0.63);
 }
 
 .client-info {
