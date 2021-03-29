@@ -8,14 +8,14 @@ Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive,
 */
 /*=== MEDIA QUERY ===*/
 html {
-  background-color: #353b43;
-  color: #737f8a;
+  background-color: #352f49;
+  color: #b9b9b9;
 }
 
 body {
-  background-color: #353b43;
+  background-color: #352f49;
   font-family: "Anaheim", sans-serif;
-  color: #737f8a;
+  color: #b9b9b9;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -27,7 +27,7 @@ h5,
 h6 {
   font-weight: 400;
   font-family: "Quattrocento Sans", sans-serif;
-  color: #afbac4;
+  color: #dddddd;
 }
 
 p {
@@ -39,7 +39,7 @@ p {
 }
 
 pre {
-  color: #afbac4;
+  color: #dddddd;
 }
 
 /*=================================================================
@@ -163,7 +163,7 @@ a:hover {
 }
 
 .bg-one {
-  background-color: #353b43;
+  background-color: #352f49;
 }
 
 .bg-dark {
@@ -407,7 +407,7 @@ a:hover {
   Navigation
 ==================================================================*/
 .navigation {
-  background-color: #1d2024;
+  background-color: #352f49;
   width: 100%;
   margin-bottom: 0;
 }
@@ -607,7 +607,7 @@ a:hover {
 }
 
 .about .block .icon-box h3 {
-  color: #afbac4;
+  color: #dddddd;
 }
 
 /*=================================================================
@@ -679,6 +679,7 @@ a:hover {
 }
 
 .contact-us {
+  background-color: #352f49;
   padding-top: 50px;
 }
 
@@ -1133,7 +1134,7 @@ a:hover {
 }
 
 .client-comment p {
-  color: #afbac4;
+  color: #dddddd;
   font-size: 18px;
 }
 
@@ -1495,7 +1496,7 @@ a:hover {
 }
 
 .post-comment-name {
-  color: #afbac4;
+  color: #dddddd;
   font-weight: 500;
   font-size: 18px;
 }
@@ -2275,7 +2276,7 @@ figcaption {
 }
 
 #select-language {
-  background: #353b43;
+  background: #352f49;
   color: #ffffff;
   border: 0;
 }
@@ -2309,4 +2310,9 @@ figcaption {
 ==================================================================*/
 .profile-width {
   width: 30%;
+}
+
+#feature {
+  background-color: #352f49;
+  padding-top: 50px;
 }

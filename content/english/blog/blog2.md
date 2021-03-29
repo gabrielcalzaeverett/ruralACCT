@@ -2,7 +2,7 @@
 title: "Press Release: ACCT Announces New Initiative to Strengthen Rural Community Colleges"
 date: 2019-08-21
 image: images/asset/blog2-pic.jpg
-author: ACCT STAFF
+author: Rachel Rush-Marlowe
 summary : "A comprehensive assessment of the needs of rural community colleges throughout the country will be conducted by the Association of Community College Trustees (ACCT), the association announced today. The study will be funded by an 18-month, $250,000 grant from the Bill & Melinda Gates Foundation."
 ---
 

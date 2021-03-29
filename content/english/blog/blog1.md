@@ -2,7 +2,7 @@
 title: "Prior Research: The Rural Male in Higher Education"
 date: 2019-02-11
 image: images/asset/blog1-pic.jpeg
-author: ACCT STAFF
+author: Rachel Rush-Marlowe
 summary : "How Community Colleges Can Improve Educational and Economic Outcomes for Rural Men."
 ---
 

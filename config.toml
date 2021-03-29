@@ -129,7 +129,7 @@ weight = 5
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/acct-logo-blue.png"
+logo = "images/acct-logo-white.png"
 # Meta data
 description = "Responsive Multipurpose Parallax Hugo Template"
 author = "Themefisher"
