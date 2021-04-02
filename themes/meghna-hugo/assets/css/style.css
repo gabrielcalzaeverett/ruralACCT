@@ -2316,3 +2316,8 @@ figcaption {
   background-color: #352f49;
   padding-top: 50px;
 }
+
+.media-highlight {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 15px;
+}
