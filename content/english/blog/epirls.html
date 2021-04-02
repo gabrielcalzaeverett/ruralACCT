@@ -1,0 +1,212 @@
+---
+author: "Rachel Rush-Marlowe"
+date: 2021-04-01
+linktitle: ePIRLS Data Story
+title: US Map
+image: images/asset/us-map.png
+layout: blank
+summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis nisi, eaque possimus temporibus animi dolore dolor minima voluptate sit iure obcaecati laborum velit ipsam necessitatibus, perspiciatis laboriosam veritatis? Minus?
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>&#128218;ePIRLS Data Story</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    </head>
+    <body>
+        <section id="intro">
+            <a href="../" target="_self"><img class="homeButton" src="stylesheets/img/homeButton.svg"></a>
+            
+            <h1>Who Clicks On Advertisements During an Online Reading Assessment?<img class="adClickGif" src="stylesheets/img/animation.gif"></h1>
+            <h2><i>An Analysis of ePIRLS 2016 Process Data in the Age of Online Learning</i></h2>
+            <p class = "author"><i>Yuqi Liao</i><p>
+
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> Introduction</h3>
+
+            <p>Just like everyone else in our modern society, students around the world are increasingly able to access and consume online information both in and out of school. This is especially true in 2020 with the rise of online learning intensified worldwide by the pandemic. How well can students read online? How do they stay focused? And how does their online reading literacy compare in a global context? The international assessment <a href="http://timssandpirls.bc.edu/pirls2016/international-results/epirls/about-epirls-2016/" target="_blank">ePIRLS</a>, first administered in 2016, offers insights to these questions. This innovative assessment of online reading measures how well 4th-grade students around the world read, interpret, and critique information online. The <a href="http://timssandpirls.bc.edu/pirls2016/international-results/epirls/student-achievement/" target="_blank"> official findings</a> have been published and the <a href="https://timssandpirls.bc.edu/pirls2016/international-database/index.html" target="_blank">dataset</a> made available, both of which provide policymakers with information essential to developing appropriate public policies in our age of online information.</p>
+
+            <p>While online reading provides new opportunities that offline reading does not, it also presents readers with new challenges, one of which is the potential for distractions (<span class="hero-tooltips" id="tooltip_refGoldstein">Goldstein et al., 2014</span>). Remember that time when you were reading an article online, where half-way through, there’s an advertisement that caught your eye, and 10 minutes later, you finished purchasing whatever that was and completely forgot about the article? The designers of ePIRLS surely remember such moments, so they put advertisements in many webpages from which students are supposed to read and collect information. The hypothesis is that students working on school assignments or research projects will finish sooner if they focus on finding critical information and are not distracted (<span class="hero-tooltips" id="tooltip_refMullis">Mullis et al., 2017</span>).</p>
+
+            <p>As a digitally based assessment, ePIRLS collects data on the test-taking process, including whether or not students have clicked on those advertisements. This can provide insights into the relationship between students’ performance and their testing behavior. However, little process data research has been conducted on ePIRLS or on other international large-scale assessments for that matter. In this post, I use ePIRLS data to test the hypothesis above, and to explore further how students around the world read and behave when presented with the distraction of online advertisements.</p>
+
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> Data and Methods</h3>
+
+            <p>Let’s first understand how the ePIRLS assessment works and where the advertisements appear in the assessment.</p>
+
+            <p>The ePIRLS 2016 assessment was completed by 4th-grade students in <a href="http://timssandpirls.bc.edu/pirls2016/international-results/epirls/about-epirls-2016/epirls-2016-countries/" target="_blank">16 education systems</a>. (They are called education systems because there are city-level jurisdictions that participated in the assessment as "benchmarking participants.") The assessment consists of <span class="hero-tooltips" id="tooltip_modules">five modules</span> of science and social studies topics, with each module lasting up to 40 minutes.</p>
+
+            <p>Each participating student took a randomly assigned combination of two of the five modules. Each module was structured as a class project and represented in a simulated internet environment that contains advertisements, such as the ad for space camp in the screenshot from the module "Mars" shown below.</p>
+
+            <img class="adMars" src="stylesheets/img/adMars.png">
+
+            <p>Out of the five modules, "Mars" and "Dr. Elizabeth Blackwell" have been <a href="http://timssandpirls.bc.edu/pirls2016/international-results/epirls/take-the-epirls-assessment/" target="_blank">released online</a>, so they can be viewed in the same way as they were presented to participating students. Below is a video walk-through (also available <a href="http://timssandpirls.bc.edu/pirls2016/international-results/epirls/example-tasks-video/" target="_blank">online</a>) about the logistics of the assessment.</p>
+
+            <video class="video" controls preload ="metadata" poster="http://pirls2016.org/wp-content/uploads/2017/01/intro-image-epirls-01.png">
+                <source src="http://pirls2016.org/wp-content/uploads/2017/videos/e16_Example_Tasks_FINAL.mp4" type=video/mp4>
+            </video>
+
+            <p>ePIRLS recorded information on how many times each student clicked on the advertisements. This information, along with students' online reading performance, is used for my analyses. All analyses follow the <a href="https://pirls.bc.edu/publications/pirls/2016-methods/P16_Methods_and_Procedures.pdf" target="_blank">official instructions</a> to account for the complex survey design of ePIRLS and use all five <a href="http://www.ierinstitute.org/fileadmin/Documents/IERI_Monograph/IERI_Monograph_Volume_02_Chapter_01.pdf" target="_blank">plausible values</a> of the online reading achievement scale.</p>
+
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> Findings</h3>
+
+            <p>Let’s dive into the results, which are categorized into the following four research questions. Click on any question to jump to its section, or scroll down (recommended) to read them all.</p>
+            <ol class = "listResearchQuestions">
+                <li><a href = "#RQ1">What are students’ advertisement-clicking patterns in each of the five modules?</a></li>
+                <li><a href = "#RQ2">What percentage of students clicked on advertisements at least once in the assessment?</a></li>
+                <li><a href = "#RQ3">How are students’ advertisement-clicking patterns associated with their online reading achievement?</a></li>
+                <li><a href = "#RQ4">How are students’ advertisement-clicking patterns associated with time spent completing the assessment?</a></li>
+            </ol>
+
+            <p id="scrollMsg">  
+                <br />
+                <img class="adClickGifSmall" src="stylesheets/img/animation.gif">  Scroll to continue  <img class="adClickGifSmall" src="stylesheets/img/animation.gif"><br />
+                &#8659;<br />
+                &#8659;<br />
+                &#8659;
+            </p>
+            <p id="errMsg"></p>
+        </section>
+        <section id='scroll'>
+            <!-- graphics -->
+            <div class='scroll__graphic sticky'>
+                <div class="plotArea is-active" id="chart"></div>
+            </div>
+            <!-- text -->
+            <div class='scroll__text'>
+                <div class='step is-active' data-step='0'>
+                    <h3 id = "RQ1" class = "RQ1">1. What are students’ advertisement-clicking patterns in each of the five modules?</h3>
+                    <p class = "RQ1">In the plot to your right, you will see the range of students' ad-clicks in each module and education system.</p>
+                </div>
+                <div class='step' data-step='1'>
+                    <p class = "RQ1">The dots on the left are the minimum number of ad-clicks and the dots on the right are the maximum. In each module, an ePIRLS participating student clicked on advertisements as few as <strong>zero</strong> times and as many as <strong>604</strong> times.</p>
+                </div>
+                <div class='step' data-step='2'>
+                    <p class = "RQ1">Look at that outlier student in Chinese Taipei who clicked the ad in the “Rainforests” module more than 600 times!</p>
+                </div>
+                <div class='step' data-step='3'>
+                    <p class = "RQ1">We can also view it in percentage terms. Each bar to the right represents the percentage of students who clicked on ads in each module (regardless of how many times they have clicked) in a given education system.</p>
+                </div> 
+                <div class='step' data-step='4'>
+                    <p class = "RQ1">The percentage of students who clicked on advertisements ranged from 2.5 percent in Sweden in the “Zebra and Wildebeest Migration” module to 19.9 percent in Abu Dhabi in the “Mars” module.</p>
+                </div> 
+                <div class='step' data-step='5'>
+                    <h3 id = "RQ2" class = "RQ2">2. What percentage of students clicked on advertisements at least once in the assessment?</h3>
+                    <p class = "RQ2">Each bar here represents the percentage of students who clicked on ads in the entire assessment (regardless of how many times they have clicked or in which module they have clicked) in a given education system.</p>
+                </div> 
+                <div class='step' data-step='6'>
+                    <p class = "RQ2">Throughout the assessment, the percentage of students who clicked on advertisements at least once ranged from 6.7 percent in Sweden to 27.7 percent in Chinese Taipei. In the United States, 13.1 percent of students clicked on advertisements at least once.</p>
+                </div>
+                <div class='step' data-step='7'>
+                    <p class = "RQ2">To break it down by gender, the percentage of <font class = "textHighlight" color = "#1C366B">boys</font> who clicked on advertisements ranged from 8.3 percent in Sweden to 35.7 percent in Chinese Taipei, and the percentage of <font class = "textHighlight" color = "#F24D29">girls</font> who clicked on advertisements ranged from 5.1 percent in Sweden to 19.1 percent in Chinese Taipei. Across all education systems, the percentage of <font class = "textHighlight" color = "#1C366B">boys</font> who clicked on advertisement was significantly higher than the percentage of <font class = "textHighlight" color = "#F24D29">girls</font>.</p>
+                </div>
+                <div class='step' data-step='8'>
+                    <h3 id = "RQ3" class = "RQ3">3. How are students’ advertisement-clicking patterns associated with their online reading achievement?</h3>
+                    <p class = "RQ3">The bars represent the average score for students <font class = "textHighlight" color = "#1C366B">who did not click on ads</font> and for those <font class = "textHighlight" color = "#1DACE8">who clicked on ads</font>, in a given education system. And the two vertical dotted lines show that, across all participating education systems, on average, the former group of students scored 537.5 points on the ePIRLS assessment while the latter scored 502.1 points.</p>
+                </div>  
+                <div class='step' data-step='9'>
+                    <p class = "RQ3">In all participating education systems, except in Singapore, students <font class = "textHighlight" color = "#1DACE8">who clicked on ads</font> scored significantly lower than their peers <font class = "textHighlight" color = "#1C366B">who did not click on ads</font>. In Singapore, the gap was not significantly different from zero. <font class = "textHighlight" color = "#f8df4f">The gap</font> favoring students who did not click on advertisements ranged from 11.4 points in Norway to 89.7 points in Abu Dhabi. In the United States, the achievement gap was 20.5 points in favor of students who did not click on advertisements.</p>
+                </div>   
+                <div class='step' data-step='10'>
+                    <h3 id = "RQ4" class = "RQ4">4. How are students’ advertisement-clicking patterns associated with time spent completing the assessment?</h3>
+                    <p class = "RQ4">The bars represent the average time students spent on the ePIRLS assessment (from start to log-out) among students <font class = "textHighlight" color = "#1C366B">who did not click on ads</font> and those <font class = "textHighlight" color = "#1DACE8">who clicked on ads</font> in a given education system.</p>
+                </div>
+                <div class='step' data-step='11'>
+                    <p class = "RQ4">In 13 of the 16 participating education systems, there was no measurable difference in time spent on the ePIRLS assessment between the two groups of students. There are three exceptions. In Italy, students <font class = "textHighlight" color = "#1DACE8">who clicked on ads</font> spent, on average, 2.8 more minutes on the assessment than their peers <font class = "textHighlight" color = "#1C366B">who did not click on ads</font>. In the United Arab Emirates and Abu Dhabi (part of UAE), it’s the other way around.</p>
+                </div>   
+                <div class='step' data-step='12'>
+                    <p class = "RQ4">This finding does not lend support to the hypothesis that students who are distracted tend to take more time to complete the assessment. One reason is likely that the ePIRLS assessment only tracks the action of students clicking on advertisements but never actually take them to the advertisement page (or a pop-up window) where students may spend more time being distracted. If ePIRLS would like to test out this hypothesis (which it <a href="http://timssandpirls.bc.edu/pirls2016/international-results/wp-content/uploads/structure/ePIRLS/4.-navigation-through-epirls/4_2_navigation-to-advertisements.pdf" target="_blank">claims to</a>), the future design of the assessment may consider enhancing this testing feature.</p>
+                </div>            
+            </div>
+        </section>
+        <section id="outro">
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> Conclusions</h3>
+
+            <p>We just did some initial exploration on how students around the world read and behave when presented with online advertisements, using the process data from ePIRLS 2016! If you reach this point and have not been distracted as some of the students were while taking the assessment, you will hopefully take away the following highlights.</p>
+            <ul class = "listFindings">
+                <li>We observed some variation of students’ ad-click patterns by module and by education system.</li>
+                <li>We observed higher proportions of boys than girls who clicked on advertisements during the assessment time.</li>
+                <li>In most education systems, students who clicked on advertisements tended to score lower than their peers who did not click on advertisements, while they seemed to spend the same amount of time completing the assessment.</li>
+                <li>To test out if students REALLY spend the same amount of time completing the assessment with or without the presence of advertisement, ePIRLS may need to improve its assessment design.</li>
+            </ul>
+            <p>I hope this close look at the ePIRLS process data will encourage more analyses in the future to gain insight into students’ online reading and testing behaviors, including their advertisement-clicking patterns.</p>
+
+
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> References</h3>
+            <p>
+                Goldstein, D. G., Suri, S., McAfee, R. P., Ekstrand-Abueg, M., & Diaz, F. (2014). The Economic and Cognitive Costs of Annoying Display Advertisements. <i>Journal of Marketing Research</i>, 51(6), 742–752. <a href="https://doi.org/10.1509/jmr.13.0439" target="_blank">https://doi.org/10.1509/jmr.13.0439</a>
+            </p>
+            <p>
+                Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M. (2017). <i>ePIRLS 2016 International Results in Online Informational Reading</i>. Retrieved from Boston College, TIMSS & PIRLS International Study Center website: <a href="http://timssandpirls.bc.edu/pirls2016/international-results/" target="_blank">http://timssandpirls.bc.edu/pirls2016/international-results/</a>
+
+            </p>
+            <h3><img class="onlineReadingIcon" src="stylesheets/img/OnlineReadingIconTomatoRed.svg"> Data and Credits</h3>
+            <p>This analysis uses the ePIRLS 2016 data available <a href="https://timssandpirls.bc.edu/pirls2016/international-database/index.html" target="_blank">here</a>. The <a href="https://github.com/yuqiliao/InternationalAssessment_ProcessData/tree/master/code" target="_blank">R script</a> for data processing and a <a href="https://github.com/yuqiliao/InternationalAssessment_ProcessData/blob/master/proposal/ePIRLS%20ad%20click%20-%20Yuqi_v4_submitted.docx" target="_blank">write-up</a> could be found <a href="https://github.com/yuqiliao/InternationalAssessment_ProcessData" target="_blank">here</a>, and the code for this data story is hosted <a href="https://github.com/yuqiliao/ePIRLSDataStory" target="_blank">here</a>.</p>
+
+            <p>This project is made possible thanks to the multitude of resources available online (tutorials for learning and implementing use <a href="https://github.com/d3/d3/wiki/Tutorials" target="_blank">D3.js</a>, <a href="https://pudding.cool/process/introducing-scrollama/" target="_blank">Scrollama</a> and <a href="https://d3-legend.susielu.com/" target="_blank">D3-legend</a>, to name a few). A special shout out to Jonathan Tan, whose <a href="https://jtanwk.github.io/us-solar-d3/" target="_blank">data story</a> provides inspiration and the code structure for this project. Many thanks also to <a href="https://www.linkedin.com/in/martin-hooper-data/" target="_blank">Marty Hooper</a> for providing valuable feedback on methodology, <a href="https://fnick851.github.io/portfolio/" target="_blank">Hanlun Song</a> for never getting tired of my web development questions, and friends who I bugged for review! ❤️</p>
+
+            <br />
+            <br />
+            <hr noshade class = "footnoteLine">
+            <br />
+            <p class = footnote>This is my first attempt to use D3.js for a data story. Any feedback is highly encouraged! Feel free to <a href="../../contact" target="_blank">reach out</a>!</p>
+            <a href="../" target="_self"><img class="homeButton" src="stylesheets/img/homeButton.svg"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </section>
+        <!-- D3 v5.14.2 downloaded on December, 2019 from https://d3js.org/ -->
+        <script type="text/javascript" src="js/lib/d3.min.js"></script>
+        <!-- External packages -->
+        <script src='js/lib/intersection-observer.js'></script>
+        <script src='js/lib/scrollama.js'></script>
+        <script src="js/lib/stickyfill.min.js"></script>
+        <script src="js/lib/popper.min.js"></script>
+        <script src="js/lib/tippy.js"></script>
+        <script>
+        ; (function() {
+            tippy("#tooltip_refGoldstein", {
+              content: "Goldstein, D. G., Suri, S., McAfee, R. P., Ekstrand-Abueg, M., & Diaz, F. (2014). The Economic and Cognitive Costs of Annoying Display Advertisements. <i>Journal of Marketing Research</i>, 51(6), 742–752.",
+              placement: "bottom",
+              theme: "tomato",
+              trigger: "click",
+              followCursor: false,
+            })
+            tippy("#tooltip_refMullis", {
+                content: "Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M. (2017). <i>ePIRLS 2016 International Results in Online Informational Reading</i>.",
+                placement: "bottom",
+                theme: "tomato",
+                trigger: "click",
+                followCursor: false,
+            })
+            tippy("#tooltip_modules", {
+                content: "Module names<ol><li>Mars</li><li>Rainforests</li><li>Dr. Elizabeth Blackwell</li><li>Zebra and Wildebeest Migration</li><li>The Legend of Troy</li></ol>",
+                placement: "bottom",
+                theme: "tomato",
+                trigger: "click",
+                followCursor: false,
+            })
+        })()
+        </script>
+        <!-- <script src="js/lib/d3-legend.min.js"></script> -->
+        <script src="js/lib/d3-annotation.min.js"></script>
+        <!-- Internal scripts -->
+        <script type="text/javascript" src="js/00-init-svg.js"></script>
+        <script type="text/javascript" src="js/01-drawRangeChart.js"></script>
+        <script type="text/javascript" src="js/01-drawRangeChartA.js"></script>
+        <script type="text/javascript" src="js/01-drawRangeChartB.js"></script>
+        <script type="text/javascript" src="js/02-drawBarChart.js"></script>
+        <script type="text/javascript" src="js/02-drawBarChartA.js"></script>
+        <script type="text/javascript" src="js/03-drawLongBarChart.js"></script>
+        <script type="text/javascript" src="js/04-drawTwoBars.js"></script>
+        <script type="text/javascript" src="js/05-drawTwoBarsWithWaterFalls.js"></script>
+        <script type="text/javascript" src="js/05-drawTwoBarsWithWaterFallsA.js"></script>
+        <script type="text/javascript" src="js/05-drawTwoBarsWithWaterFallsB.js"></script>
+        <script type="text/javascript" src="js/05-drawTwoBarsWithWaterFallsC.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
