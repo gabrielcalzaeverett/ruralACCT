@@ -1,6 +1,6 @@
 ---
 title: "New ACCT Paper Assesses Rural College Needs, Showcases Innovative Solutions to Making Do with Limited Resources"
-date: 2020-03-16
+date: 2021-03-16
 image: images/asset/blog4-pic.jpg
 author: Rachel Rush-Marlowe
 summary : "The Association of Community College Trustees (ACCT) today released Strengthening Rural Community Colleges: Innovations and Opportunities, a paper that details the needs of rural colleges throughout the United States."
