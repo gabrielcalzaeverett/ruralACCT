@@ -24,6 +24,14 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
 
+# css plugins custom
+# [[params.customplugins.css]]
+# link = "plugins/customcss/bootstrap4-toggle.min.css"
+[[params.customplugins.css]]
+link = "plugins/customcss/d3-tip.css"
+# [[params.customplugins.css]]
+# link = "plugins/customcss/materialize.css"
+
 # js plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
@@ -39,6 +47,17 @@ link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 link = "plugins/lazy-load/lozad.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
+
+# js plugins custom
+[[params.plugins.js]]
+link = "plugins/customjs/index.js"
+
+[[params.customplugins.js]]
+link = "plugins/customjs/d3.min.js"
+[[params.customplugins.js]]
+link = "plugins/customjs/d3-tip-v6.js"
+[[params.customplugins.js]]
+link = "plugins/customjs/topojson.min.js"
 
 ################### Navigation ########################
 [[Languages.en.menu.main]]
