@@ -1,4 +1,4 @@
-//url是 toggle 的样式 https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css
+//toggle style: https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css
 
 class Map {
   constructor(id, width, height) {
@@ -48,7 +48,7 @@ class Map {
 
     this.addStatesPath();
 
-    this.addCountiesPath();
+    // this.addCountiesPath(); //turn this off to NOT draw county path
     this.addSchoolCircles();
   }
   addStatesPath() {
@@ -99,7 +99,7 @@ class Map {
             +d["HD2018.Latitude.location.of.institution"],
           ])?.[1]
       )
-      .attr("r", 3)
+      .attr("r", 4)
       .attr(
         "class",
         (d) =>
