@@ -8,7 +8,7 @@ class Map {
     this.svg = this.parentDiv
       .append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", "0 0 1100 1200")
+      .attr("viewBox", "0 0 1100 800")
       // I commentted out the following two lines, and added the above two lines instead to make the map responsive. based on https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js
       // .attr("width", width)
       // .attr("height", height);
@@ -39,13 +39,20 @@ class Map {
     await this.initData();
 
     this.epsilon = 0.000001;
-    this.project = geoAlbersUsaPr(this.epsilon);
+    
+    this.project = d3
+      .geoAlbersUsa()
+      .fitSize([this.width, this.height], this.statesMap);
+
+    //this.project = geoAlbersUsaPr(this.epsilon);
 
     this.project
       .scale(this.width * 1.05)
       .translate([this.width / 2, this.height / 2.7]);
     //由于重写了美国地图的方法(在本js最底下的函数),因此该地图方法无匹配大小功能
     // project.fitSize([this.width, this.height], geoMap);
+
+    
 
     this.geoPath = d3.geoPath().projection(this.project);
 
@@ -117,8 +124,8 @@ class Map {
               : "ruralDefinition1-0"
           }`
       )
-      .attr("fill", "#046582")
-      .attr("opacity", 0.8)
+      .attr("fill", "#8e82b6")
+      .attr("opacity", 0.7)
       .attr("stroke", "white")
       .attr("stroke-opacity", 0.6)
       .attr("stroke-width", 0.5)
@@ -162,7 +169,7 @@ class Map {
           d3.selectAll(".ruralDefinition2-1").attr("fill", selectedColor);
       } else {
         this.toggledCircles.ruralDefinition1 = false;
-        d3.selectAll(".ruralDefinition1-1").attr("fill", "#046582");
+        d3.selectAll(".ruralDefinition1-1").attr("fill", "#8e82b6");
         this.toggledCircles.ruralDefinition2 &&
           d3.selectAll(".ruralDefinition2-1").attr("fill", selectedColor);
       }
@@ -176,7 +183,7 @@ class Map {
           d3.selectAll(".ruralDefinition1-1").attr("fill", selectedColor);
       } else {
         this.toggledCircles.ruralDefinition2 = false;
-        d3.selectAll(".ruralDefinition2-1").attr("fill", "#046582");
+        d3.selectAll(".ruralDefinition2-1").attr("fill", "#8e82b6");
         this.toggledCircles.ruralDefinition1 &&
           d3.selectAll(".ruralDefinition1-1").attr("fill", selectedColor);
       }
@@ -186,6 +193,8 @@ class Map {
 
 new Map("map", 1100, 800);
 
+//this geoAlbersUsaPr() function is used to create a US map with puerto-rico, american saoma, and guam, Mariana islands, per this guide https://observablehq.com/@almccon/u-s-map-with-puerto-rico-us-virgin-islands-american-samoa-gua
+// I ended up using only the standard US map (https://observablehq.com/@d3/u-s-map). so the following function could is not used here.
 function geoAlbersUsaPr(epsilon) {
   var cache,
     cacheStream,
@@ -360,6 +369,7 @@ function geoAlbersUsaPr(epsilon) {
 
   return albersUsa.scale(1070);
 }
+
 function multiplex(streams) {
   const n = streams.length;
   return {
