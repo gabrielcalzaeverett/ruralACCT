@@ -24,6 +24,14 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
 
+# css plugins custom
+# [[params.customplugins.css]]
+# link = "plugins/customcss/bootstrap4-toggle.min.css"
+[[params.customplugins.css]]
+link = "plugins/customcss/d3-tip.css"
+# [[params.customplugins.css]]
+# link = "plugins/customcss/materialize.css"
+
 # js plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
@@ -40,6 +48,17 @@ link = "plugins/lazy-load/lozad.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
 
+# js plugins custom
+[[params.plugins.js]]
+link = "plugins/customjs/index.js"
+
+[[params.customplugins.js]]
+link = "plugins/customjs/d3.min.js"
+[[params.customplugins.js]]
+link = "plugins/customjs/d3-tip-v6.js"
+[[params.customplugins.js]]
+link = "plugins/customjs/topojson.min.js"
+
 ################### Navigation ########################
 [[Languages.en.menu.main]]
 name = "about"
@@ -48,28 +67,34 @@ url = "about"
 weight = 1
 
 [[Languages.en.menu.main]]
+name = "map"
+pre = "#"
+url = "usmap"
+weight = 2
+
+[[Languages.en.menu.main]]
 name = "publication"
 pre = "#"
 url = "testimonial"
-weight = 2
+weight = 3
 
 [[Languages.en.menu.main]]
 name = "blog"
 pre = "#"
 url = "blog"
-weight = 3
+weight = 4
 
 [[Languages.en.menu.main]]
 name = "team"
 pre = "#"
 url = "team"
-weight = 4
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "ACCT"
 pre = "#"
 url = "feature"
-weight = 5
+weight = 6
 
 # [[Languages.en.menu.main]]
 # name = "themefisher"
@@ -189,7 +214,7 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 home = "Home"
-copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
+copyright = "Copyright &copy; 2021 ACCT"
 
 # ################################ France Language ########################
 # [Languages.fr]

@@ -141,7 +141,7 @@ a:hover {
 }
 
 .color {
-  color: #6CB670;
+  color: #57cbcc;
 }
 
 .sub-title {
@@ -1119,7 +1119,7 @@ a:hover {
 }
 
 .testimonial:before {
-  background: rgba(77, 77, 77, 0.63);
+  background: rgba(92, 92, 92, 0.80);
 }
 
 .client-info {
@@ -1135,7 +1135,7 @@ a:hover {
 
 .client-comment p {
   color: #dddddd;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .client-thumb img {

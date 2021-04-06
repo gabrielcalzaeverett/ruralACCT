@@ -60,10 +60,10 @@ jQuery(function ($) {
 	/* =========================================================================  */
 
 	$("#testimonials").slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000
+		infinite: true
+		// arrows: false
+		// autoplay: true,
+		// autoplaySpeed: 4000
 	});
 
 	/* ========================================================================= */

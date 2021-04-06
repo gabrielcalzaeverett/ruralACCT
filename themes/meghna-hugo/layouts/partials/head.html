@@ -20,7 +20,17 @@
 
 	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify }}
-  <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+  	<link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+
+	{{ "<!-- Custom stylesheet - YL -->" | safeHTML }}
+	{{ range site.Params.customplugins.css}}
+	<link rel="stylesheet" href="{{ .link | absURL }}" media="screen">
+	{{ end }}
+
+  	{{ "<!-- Custom JS Plugins - YL -->" | safeHTML }}
+	{{ range site.Params.customplugins.js}}
+	<script src="{{ .link | absURL }}"></script>
+	{{ end }}
 
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
