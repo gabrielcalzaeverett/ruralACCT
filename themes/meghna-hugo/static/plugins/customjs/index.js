@@ -7,8 +7,11 @@ class Map {
     this.height = height;
     this.svg = this.parentDiv
       .append("svg")
-      .attr("width", width)
-      .attr("height", height);
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 1100 1200")
+      // I commentted out the following two lines, and added the above two lines instead to make the map responsive. based on https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js
+      // .attr("width", width)
+      // .attr("height", height);
     this.g = this.svg.append("g");
     this.tip();
     this.initMap();
@@ -40,7 +43,7 @@ class Map {
 
     this.project
       .scale(this.width * 1.05)
-      .translate([this.width / 2, this.height / 2]);
+      .translate([this.width / 2, this.height / 2.7]);
     //由于重写了美国地图的方法(在本js最底下的函数),因此该地图方法无匹配大小功能
     // project.fitSize([this.width, this.height], geoMap);
 
@@ -58,7 +61,8 @@ class Map {
       .join("path")
       .attr("d", this.geoPath)
       .attr("fill", "none")
-      .attr("stroke", "gray");
+      .attr("stroke", "gray")
+      .attr("stroke-opacity", 0.7);
   }
   addCountiesPath() {
     this.g
@@ -114,9 +118,9 @@ class Map {
           }`
       )
       .attr("fill", "#046582")
-      .attr("opacity", 0.6)
+      .attr("opacity", 0.8)
       .attr("stroke", "white")
-      .attr("stroke-opacity", 0.4)
+      .attr("stroke-opacity", 0.6)
       .attr("stroke-width", 0.5)
       .on("mouseover", this.tool_tip.show)
       .on("mouseout", this.tool_tip.hide);
@@ -146,11 +150,11 @@ class Map {
       ruralDefinition1: false,
       ruralDefinition2: false,
     };
-    let selectedColor = "red";
+    let selectedColor = "#26a69a";
     d3.select("#switch-ruralDefinition1").on("change", (e) => {
       let value = d3.select(e.target).property("checked");
 
-      //修改颜色
+      //change color
       if (value) {
         this.toggledCircles.ruralDefinition1 = true;
         d3.selectAll(".ruralDefinition1-1").attr("fill", selectedColor);
@@ -180,7 +184,7 @@ class Map {
   }
 }
 
-new Map("map", 1000, 800);
+new Map("map", 1100, 800);
 
 function geoAlbersUsaPr(epsilon) {
   var cache,
