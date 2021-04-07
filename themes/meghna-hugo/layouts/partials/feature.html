@@ -12,7 +12,10 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="content-block">
-					<h2>{{ .title | markdownify }}</h2>
+					<div class = "title">
+						<h2>{{ with .title }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
+							{{ with .title }} {{ after (len (index (split . " ") 0)) . | safeHTML }} {{ end }}</span></h2>
+					</div>
 					<p>{{ .content1 | markdownify }}</p>
 					<p>{{ .content2 | markdownify }}</p>
 					<div class="row">
