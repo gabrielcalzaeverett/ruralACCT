@@ -74,8 +74,8 @@ weight = 2
 
 [[Languages.en.menu.main]]
 name = "publication"
-pre = "#"
-url = "testimonial"
+pre = ""
+url = "https://www.acct.org/files/Strengthening%20Rural%20Community%20Colleges%202021.pdf"
 weight = 3
 
 [[Languages.en.menu.main]]
