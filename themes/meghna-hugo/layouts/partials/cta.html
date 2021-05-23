@@ -11,6 +11,20 @@
 			<div class="col-lg-12 text-center">
 				<h2>{{ .title | markdownify }}</h2>
 				<p>{{ .content | markdownify }}</p>
+				<div class="row">
+					<div class = col-xl-12>
+						<h2><b>Media <span class="color">Highlights</span></b></h2>
+						<ul class = "media-highlight">
+							<li><a href = "https://www.publicnewsservice.org/2021-04-01/education/rural-ca-community-colleges-move-to-combat-poverty-digital-divide/a73777-1" target="_blank"><b>Public News Service | </b>Rural CA Community Colleges Move to Combat Poverty, Digital Divide</a></li>
+							<li><a href = "https://dailyyonder.com/rural-community-colleges-see-slump-in-enrollment-due-to-the-pandemic/2021/03/30/" target="_blank"><b>The Daily Yonder | </b>Rural Community Colleges See Slump in Enrollment Due to the Pandemic</a></li>
+							<li><a href = "https://diverseeducation.com/article/208561/" target="_blank"><b>Diverse: Issues in Higher Education | </b>Report Highlights Challenges Facing Rural Communities</a></li>
+							<li><a href = "https://www.chronicle.com/newsletter/the-edge/2021-03-24" target="_blank"><b>The Chronicle of Higher Education | </b>4 Challenges That Threaten College Completion Now and Post-Pandemic</a></li>
+							<li><a href = "https://www.insidehighered.com/quicktakes/2021/03/17/problems-facing-rural-community-colleges" target="_blank"><b>Inside Higher Ed | </b>Problems Facing Rural Community Colleges</a></li>
+							<li><a href = "https://www.wtvq.com/2021/03/23/rural-community-college-students-face-more-challenges-study/" target="_blank"><b>ABC 36 News | </b>Rural community college students face more challenges: Study</a></li>
+							<li><a href = "https://www.kuer.org/podcast/news-briefs/2021-04-02/pm-news-brief-fake-vaccination-cards-protesting-encircle-tech-industry-wage-gap" target="_blank"><b>NPR Utah | </b>Rural Community College Enrollment Took A Huge Hit From Pandemic</a></li>
+						</ul>
+					</div>
+				</div>
 				{{ if .button.enable }}
 				{{ with .button }}
 				<a href="{{ .link }}" class="btn btn-main page-scroll">{{ .label }}</a>

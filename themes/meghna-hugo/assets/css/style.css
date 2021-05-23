@@ -332,7 +332,7 @@ a:hover {
 
 .overly:before {
   content: '';
-  background: rgba(0, 0, 0, 0.096);
+  background: rgba(134, 134, 134, 0.63);
   position: absolute;
   top: 0;
   right: 0;
