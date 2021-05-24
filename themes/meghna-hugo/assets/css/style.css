@@ -546,12 +546,63 @@ a:hover {
 /*=================================================================
   About us section
 ==================================================================*/
-.about .block {
-  background: #242930;
+
+.Research {
+  background: linear-gradient(0deg, rgba(87,203,204, 0.3), rgba(134, 134, 134, 0.63)), url("../images/about/drone1.jpg");
+  background-size: cover;
+  background-color: #242930;
   padding: 30px;
   border-bottom: 2px solid transparent;
   transition: .5s all;
   margin-bottom: 20px;
+}
+
+.Convene {
+  background: linear-gradient(0deg, rgba(87,203,204, 0.3), rgba(134, 134, 134, 0.63)), url("../images/about/family.jpg");
+  background-size: cover;
+  background-color: #242930;
+  padding: 30px;
+  border-bottom: 2px solid transparent;
+  transition: .5s all;
+  margin-bottom: 20px;
+}
+
+.Advocate {
+  background: linear-gradient(0deg, rgba(87,203,204, 0.3), rgba(134, 134, 134, 0.63)), url("../images/about/plane.jpg");
+  background-size: cover;
+  background-color: #242930;
+  padding: 30px;
+  border-bottom: 2px solid transparent;
+  transition: .5s all;
+  margin-bottom: 20px;
+}
+
+.text-background1 {
+  color:rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
+
+.text-background2 {
+  color:#000;
+  background-color: rgb(250, 250, 250);
+  display: inline;
+  box-shadow: .3em 0 0 rgb(250, 250, 250), -.3em 0 0 rgb(250, 250, 250);
+}
+
+.about .block {
+  /* background-image: url("../images/about/about-business-man.jpg");
+  background-size: cover; */
+  background-color: #242930;
+  padding: 30px;
+  border-bottom: 2px solid transparent;
+  transition: .5s all;
+  margin-bottom: 20px;
+}
+
+.aboutContent {
+  height: 130px;
 }
 
 .about .block:hover {
@@ -570,9 +621,10 @@ a:hover {
   background-color: transparent;
   margin: 46.19px auto 60px;
   padding: 20px 0;
-  border-left: 2px solid rgba(236, 239, 241, 0.07);
-  border-right: 2px solid rgba(236, 239, 241, 0.07);
+  border-left: 2px solid rgba(236, 239, 241, 0.77);
+  border-right: 2px solid rgba(236, 239, 241, 0.77);
   font-size: 50px;
+  color:  rgba(236, 239, 241, 0.77);
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
   transition-duration: 0.3s;
@@ -596,14 +648,14 @@ a:hover {
 
 .about .block .icon-box:before {
   top: -56.5685px;
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
-  border-right: 2px solid rgba(236, 239, 241, 0.07);
+  border-top: 2px solid rgba(236, 239, 241, 0.77);
+  border-right: 2px solid rgba(236, 239, 241, 0.77);
 }
 
 .about .block .icon-box:after {
   bottom: -56.5685px;
-  border-bottom: 2px solid rgba(236, 239, 241, 0.07);
-  border-left: 2px solid rgba(236, 239, 241, 0.07);
+  border-bottom: 2px solid rgba(236, 239, 241, 0.77);
+  border-left: 2px solid rgba(236, 239, 241, 0.77);
 }
 
 .about .block .icon-box h3 {

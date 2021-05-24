@@ -3,7 +3,7 @@
 {{ if $data.about.about.enable }}
 {{ with $data.about.about }}
 {{"<!-- Start About Section -->" | safeHTML}}
-<section class="bg-one about section" id="about">
+<section id="about" class="bg-one about section">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-12">
@@ -33,14 +33,14 @@
 			{{ range .about_item }}
 			{{"<!-- About item -->" | safeHTML}}
 			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
+				<div class="block {{ .title }}">
 					<div class="icon-box">
 						{{with .icon}}<i class="{{ . }}"></i>{{ end }}
 					</div>
 					{{"<!-- Express About Yourself -->" | safeHTML}}
-					<div class="content text-center">
-						<h3>{{ .title }}</h3>
-						<p>{{ .content | markdownify }}</p>
+					<div class="aboutContent text-center">
+						<h3 class = "text-background1">{{ .title }}</h3>
+						<p class = "text-background2">{{ .content | markdownify }}</p>
 					</div>
 				</div>
 			</div>
