@@ -67,15 +67,15 @@ url = "about"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "map"
-pre = "#"
-url = "usmap"
-weight = 2
-
-[[Languages.en.menu.main]]
 name = "publication"
 pre = ""
 url = "https://www.acct.org/files/Strengthening%20Rural%20Community%20Colleges%202021.pdf"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "map"
+pre = "#"
+url = "usmap"
 weight = 3
 
 [[Languages.en.menu.main]]

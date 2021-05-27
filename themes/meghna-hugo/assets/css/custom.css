@@ -1,7 +1,16 @@
 /* us map section */
-#usmap {
-    height:100vh;;
+@media (max-height: 750px) {
+  #usmap {
+    height:800px;;
+  }
 }
+
+@media (min-height: 751px) {
+  #usmap {
+    height:100vh;;
+  }
+}
+
 
 /*Uncomment it for testing purposes */
 /* .test {

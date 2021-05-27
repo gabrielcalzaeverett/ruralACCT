@@ -1097,6 +1097,18 @@ a:hover {
   }
 }
 
+@media (max-height: 540px) {
+  .hero-area {
+    height:540px;;
+  }
+}
+
+@media (min-height: 541px) {
+  .hero-area {
+    height:100vh;;
+  }
+}
+
 .member-photo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
