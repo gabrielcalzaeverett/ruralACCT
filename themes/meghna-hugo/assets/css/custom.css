@@ -1,14 +1,25 @@
 /* us map section */
-@media (max-height: 750px) {
+@media (max-height: 1000px) {
   #usmap {
     height:800px;;
   }
 }
 
-@media (min-height: 751px) {
-  #usmap {
-    height:100vh;;
-  }
+@media (min-height: 1001px) {
+    #usmap {
+      height:95vh;
+    }
+}
+
+.usmapIntro {
+  line-height: 1.4;
+  margin-top:0;
+}
+
+.highlightText {
+  color: #fff;
+  background: #57cbcc;
+  font-weight: bold;
 }
 
 

@@ -7,8 +7,8 @@ class Map {
     this.height = height;
     this.svg = this.parentDiv
       .append("svg")
-      .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", "0 0 1100 800")
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .attr("viewBox", "0 30 1100 800")
       // I commentted out the following two lines, and added the above two lines instead to make the map responsive. based on https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js
       // .attr("width", width)
       // .attr("height", height);

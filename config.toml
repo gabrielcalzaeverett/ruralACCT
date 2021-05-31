@@ -79,7 +79,7 @@ url = "usmap"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "blog"
+name = "latest"
 pre = "#"
 url = "blog"
 weight = 4
