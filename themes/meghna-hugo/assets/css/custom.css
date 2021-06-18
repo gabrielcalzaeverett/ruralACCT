@@ -39,6 +39,8 @@
         -moz-user-select: none;
          -ms-user-select: none;
              user-select: none;
+
+    margin-left:1em;
    }
    
    .switch label {
