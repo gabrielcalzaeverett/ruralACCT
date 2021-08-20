@@ -7,7 +7,7 @@ paginate = "6"
 # post excerpt
 summaryLength = "15"
 # disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
+#disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = []
 
@@ -72,11 +72,12 @@ pre = ""
 url = "https://www.acct.org/files/Strengthening%20Rural%20Community%20Colleges%202021.pdf"
 weight = 2
 
-[[Languages.en.menu.main]]
-name = "map"
-pre = "#"
-url = "usmap"
-weight = 3
+# took the map section now per Rachel's request on 8/20/21
+# [[Languages.en.menu.main]]
+# name = "map"
+# pre = "#"
+# url = "usmap"
+# weight = 3
 
 [[Languages.en.menu.main]]
 name = "latest"
